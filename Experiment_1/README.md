@@ -1,113 +1,75 @@
-📚 Library Management System – Database Design
-📌 Aim
+# Experiment 1 – Library Management System Database
 
-To design and implement a Library Management System database using SQL by creating normalized tables with appropriate primary keys, foreign keys, and constraints, and to perform DML and DCL operations such as role creation, privilege granting, and revoking to ensure secure and efficient data management.
+## Experiment
+Experiment 1: Design and implementation of a Library Management System using PostgreSQL with DDL, DML and DCL commands.
 
-🛠️ Technologies Used
+---
 
-Database: PostgreSQL / SQL-compliant RDBMS
+## Aim
+The aim of this experiment is to design and implement a Library Management System database using PostgreSQL. The database is created using appropriate tables, primary keys, foreign keys and constraints. Data manipulation operations are performed and database security is implemented using roles and privileges.
 
-Language: SQL
+---
 
-🗂️ Database Schema Overview
+## Objective
+The objective of this experiment is to understand the use of DDL, DML and DCL commands in PostgreSQL. It also helps in learning role-based access control by creating roles and assigning permissions.
 
-The system consists of the following tables:
+---
 
-BOOK_DETAILS
+## Practical / Experiment Steps
 
-LIBRARY_USERS
+1. Create tables for book details, library users and book transactions.
+2. Apply primary keys, foreign keys and check constraints.
+3. Insert sample records into the tables.
+4. Display records using SELECT queries.
+5. Create a database role named LIBRARIAN_ROLE.
+6. Grant required permissions to the role.
+7. Revoke permissions when required to ensure database security.
 
-BOOK_TRANSACTIONS
+---
 
-Additionally, roles and privileges are managed using SQL DCL commands.
+## Procedure of the Experiment
 
-📘 Table Descriptions
-1️⃣ BOOK_DETAILS Table
+1. Open pgAdmin and connect to the PostgreSQL server.
+2. Create a new database for the Library Management System.
+3. Create tables BOOK_DETAILS, LIBRARY_USERS, and BOOK_TRANSACTIONS using CREATE TABLE command.
+4. Define primary keys and foreign keys while creating tables.
+5. Insert records into tables using INSERT command.
+6. Retrieve data using SELECT command.
+7. Create a role named LIBRARIAN_ROLE using CREATE ROLE command.
+8. Grant SELECT, INSERT, UPDATE and DELETE permissions to the role.
+9. Revoke INSERT, UPDATE and DELETE permissions from BOOK_DETAILS table.
+10. Execute all queries and verify the output.
 
-Stores information about books available in the library.
+---
 
-Column Name	Data Type	Constraints
-BOOK_ID	INT	Primary Key
-TITLE	VARCHAR(30)	NOT NULL
-AUTHOR	VARCHAR(30)	NOT NULL
-COPIES_AVAILABLE	INT	CHECK (COPIES_AVAILABLE ≥ 1)
+## Input / Output Details
 
-✔ Ensures at least one copy of a book is available.
+### Input
+SQL commands for table creation, insertion of records, selection of data, role creation, grant and revoke permissions.
 
-2️⃣ LIBRARY_USERS Table
+### Output
+Successful creation of tables, insertion and display of records, creation of role, granting and revoking of permissions.
 
-Stores details of users registered in the library.
+---
 
-Column Name	Data Type	Constraints
-USER_ID	INT	Primary Key
-FULL_NAME	VARCHAR(25)	NOT NULL
-AGE	INT	NOT NULL, CHECK (AGE ≥ 17)
-EMAIL_ID	VARCHAR(40)	UNIQUE
+## Screenshots / Outputs
 
-✔ Restricts registration to users aged 17 or above
-✔ Prevents duplicate email registrations
+### 1️⃣ Table Creation
+<img src="screenshot/Screenshot 2026-01-30 at 8.12.24 AM.png" width="500"/>
 
-3️⃣ BOOK_TRANSACTIONS Table
+### 2️⃣ DML Operations
+<img src="screenshot/Screenshot 2026-01-30 at 8.13.23 AM.png" width="500"/>
 
-Maintains records of books issued to users.
+### 3️⃣ SELECT Output
+<img src="screenshot/Screenshot 2026-01-30 at 8.14.33 AM.png" width="500"/>
 
-Column Name	Data Type	Constraints
-ISSUE_ID	INT	Primary Key
-BOOK_ID	INT	Foreign Key → BOOK_DETAILS(BOOK_ID)
-USER_ID	INT	Foreign Key → LIBRARY_USERS(USER_ID)
-ISSUE_DATE	DATE	NOT NULL
+### 4️⃣ Role Creation and Grant
+<img src="screenshot/Screenshot 2026-01-30 at 8.15.53 AM.png" width="500"/>
 
-✔ Maintains referential integrity between books and users
+### 5️⃣ Revoke Permissions
+<img src="screenshot/Screenshot 2026-01-30 at 8.15.53 AM.png" width="500"/>
 
-🔗 Relationships
+---
 
-One book can be issued multiple times
-
-One user can issue multiple books
-
-Foreign keys ensure valid references between tables
-
-✏️ DML Operations Performed
-
-INSERT – Add books, users, and issue records
-
-SELECT – Retrieve data from tables
-
-🔐 DCL (Data Control Language)
-👤 Role Creation
-
-A librarian role is created to manage library data:
-
-CREATE ROLE LIBRARIAN_ROLE LOGIN PASSWORD 'lib123';
-
-✅ Granting Privileges
-
-The librarian is granted permissions on all tables:
-
-GRANT SELECT, INSERT, UPDATE, DELETE
-ON BOOK_DETAILS, BOOK_TRANSACTIONS, LIBRARY_USERS
-TO LIBRARIAN_ROLE;
-
-❌ Revoking Privileges
-
-Restricting modification access on book data:
-
-REVOKE INSERT, UPDATE, DELETE
-ON BOOK_DETAILS
-FROM LIBRARIAN_ROLE;
-
-🎯 Key Features
-
-Strong data integrity using constraints
-
-Proper normalization
-
-Secure access through roles and privileges
-
-Efficient tracking of book transactions
-
-Scalable and maintainable database design
-
-📌 Conclusion
-
-This project demonstrates a well-structured Library Management System database using SQL. By effectively applying DDL, DML, and DCL commands, the system ensures data accuracy, security, and flexibility, making it suitable for real-world library applications.
+## Learning Outcome
+After completing this experiment, the student learned how to design a database using tables and constraints. The student also understood the use of DDL, DML and DCL commands in PostgreSQL and gained practical knowledge of role-based access control.
