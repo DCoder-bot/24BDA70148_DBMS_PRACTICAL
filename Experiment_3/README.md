@@ -80,6 +80,7 @@ BEGIN
     RAISE NOTICE 'Salary After Bonus  : %', new_salary;
 END
 $$;
+```
 ---
 
 ## Screenshots
