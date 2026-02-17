@@ -95,25 +95,27 @@ ORDER BY avg_salary DESC;
 
 ---
 
+---
+
 ## Screenshots
 
 ### Step 1: Table Creation and Insertion
-![Step 1](screenshots/ss1.png)
+<img src="screenshots/ss1.png" width="600">
 
 ---
 
 ### Step 2: Display All Records
-![Step 2](screenshots/ss2.png)
+<img src="screenshots/ss2.png" width="600">
 
 ---
 
 ### Step 3: Department-wise Average Salary
-![Step 3](screenshots/ss3.png)
+<img src="screenshots/ss3.png" width="600">
 
 ---
 
 ### Step 4: Final Query with WHERE, GROUP BY, HAVING, ORDER BY
-![Step 4](screenshots/ss3.png)
+<img src="screenshots/ss3.png" width="600">
 
 ---
 
