@@ -72,7 +72,7 @@ END $$;
 
 ### Output
 
-![IF-ELSE Output](Screenshots/If_else.png)
+<img src="Screenshots/If_else.png" width="500"/>
 
 ---
 
@@ -101,7 +101,7 @@ END $$;
 
 ### Output
 
-![IF-ELSIF Output](Screenshots/IF_elsif_else.png)
+<img src="Screenshots/IF_elsif_else.png" width="500"/>
 
 ---
 
@@ -130,7 +130,7 @@ END $$;
 
 ### Output
 
-![ELSIF Ladder Output](Screenshots/elsif_ladder.png)
+<img src="Screenshots/elsif_ladder.png" width="500"/>
 
 ---
 
@@ -159,7 +159,7 @@ END $$;
 
 ### Output
 
-![CASE Output](Screenshots/case_statement.png)
+<img src="Screenshots/case_statement.png" width="500"/>
 
 ---
 
