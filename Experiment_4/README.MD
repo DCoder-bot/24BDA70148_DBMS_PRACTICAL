@@ -130,7 +130,7 @@ END $$;
 
 ### Output
 
-<img src="Screenshots/elsif_ladder.png" width="500"/>
+<img src="Screenshots/elssif_ladder.png" width="500"/>
 
 ---
 
