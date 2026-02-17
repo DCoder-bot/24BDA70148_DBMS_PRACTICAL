@@ -1,43 +1,56 @@
 # Experiment 3 – PL/pgSQL Salary and Bonus Calculation
 
 ## Experiment
-Experiment 3: Calculating employee salary and applying a bonus using PL/pgSQL. This experiment demonstrates variable declaration, arithmetic operations, and displaying output using `RAISE NOTICE`.
+**Experiment 3:** Calculating employee salary and applying a bonus using PL/pgSQL. This experiment demonstrates variable declaration, arithmetic operations, and displaying output using RAISE NOTICE.
+
+---
 
 ## Aim
 To practice writing PL/pgSQL blocks that perform calculations on employee data, calculate bonuses, and display results.
 
+---
+
 ## Objective
-- To declare variables in PL/pgSQL.  
-- To perform arithmetic calculations on employee salary.  
-- To calculate a bonus amount based on a percentage of salary.  
+- To declare variables in PL/pgSQL.
+- To perform arithmetic calculations on employee salary.
+- To calculate a bonus amount based on a percentage of salary.
 - To display employee details and salary information before and after applying the bonus.
 
+---
+
 ## Software Requirements
-- **Database:** PostgreSQL  
-- **Tool:** pgAdmin or psql
+**Database:** PostgreSQL  
+**Tool:** pgAdmin or psql  
+
+---
 
 ## Practical / Experiment Steps
-1. Declare variables for employee ID, name, and salary.  
-2. Calculate a 10% bonus on the employee salary.  
-3. Calculate the total salary after adding the bonus.  
-4. Display employee details and salary information before and after bonus using `RAISE NOTICE`.  
+1. Declare variables for employee ID, name, and salary.
+2. Calculate a 10% bonus on the employee salary.
+3. Calculate the total salary after adding the bonus.
+4. Display employee details and salary information before and after bonus using RAISE NOTICE.
 5. Take screenshots of outputs for documentation.
+
+---
 
 ## Input / Output Details
 
 ### Input
-- Employee details:  
-  - `emp_id` INT  
-  - `emp_name` VARCHAR(50)  
-  - `emp_salary` INT  
-- Bonus calculation: 10% of employee salary  
+Employee details:
+- emp_id INT
+- emp_name VARCHAR(50)
+- emp_salary INT
+
+Bonus calculation: 10% of employee salary
 
 ### Output
-- Step 1: Display employee details and original salary.  
-- Step 2: Display bonus amount and total salary after applying 10% bonus.  
-- Screenshots of outputs (s1 and s2) are attached.
+- Step 1: Display employee details and original salary.
+- Step 2: Display bonus amount and total salary after applying 10% bonus.
+
+---
 
 ## SQL / PL/pgSQL Code
+
 ```sql
 DO
 $$
@@ -67,12 +80,22 @@ BEGIN
     RAISE NOTICE 'Salary After Bonus  : %', new_salary;
 END
 $$;
+---
+
 ## Screenshots
-- **Screenshot 1:** DO block execution  
-- **Screenshot 2:** Output showing Employee ID, Name, Salary, Bonus, and Total Salary  
+
+### Screenshot 1: DO Block Execution
+<img src="screenshots/ss1.png" width="600">
+
+---
+
+### Screenshot 2: Output Showing Employee Details and Salary Calculation
+<img src="screenshots/ss2.png" width="600">
+
+---
 
 ## Learning Outcome
-- Learned to declare variables in PL/pgSQL.  
-- Learned to perform arithmetic calculations in PostgreSQL.  
-- Learned to display output using `RAISE NOTICE`.  
+- Learned to declare variables in PL/pgSQL.
+- Learned to perform arithmetic calculations in PostgreSQL.
+- Learned to display output using RAISE NOTICE.
 - Learned to calculate a bonus and total salary dynamically.
