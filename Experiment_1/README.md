@@ -55,19 +55,19 @@ Successful creation of tables, insertion and display of records, creation of rol
 ## Screenshots / Outputs
 
 ### 1️⃣ Table Creation
-<img src="screenshot/Screenshot 2026-01-30 at 8.12.24 AM.png" width="500"/>
+<img src="screenshot/ss1.png" width="500"/>
 
 ### 2️⃣ DML Operations
-<img src="screenshot/Screenshot 2026-01-30 at 8.13.23 AM.png" width="500"/>
+<img src="screenshot/ss2.png" width="500"/>
 
 ### 3️⃣ SELECT Output
-<img src="screenshot/Screenshot 2026-01-30 at 8.14.33 AM.png" width="500"/>
+<img src="screenshot/ss3.png" width="500"/>
 
 ### 4️⃣ Role Creation and Grant
-<img src="screenshot/Screenshot 2026-01-30 at 8.15.53 AM.png" width="500"/>
+<img src="screenshot/ss4.png" width="500"/>
 
 ### 5️⃣ Revoke Permissions
-<img src="screenshot/Screenshot 2026-01-30 at 8.15.53 AM.png" width="500"/>
+<img src="screenshot/ss4.png" width="500"/>
 
 ---
 
