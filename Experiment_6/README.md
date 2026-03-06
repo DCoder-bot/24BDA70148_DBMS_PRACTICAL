@@ -106,6 +106,8 @@ END $$
 ```
 ---
 
+---
+
 ## 2️⃣ Explicit Cursor
 
 ```sql
@@ -174,25 +176,31 @@ END $$;
 
 ### Screenshot 1 – Execution of Implicit Cursor Program
 
-![Implicit Cursor Output](images/ss1.png)
+<p align="center">
+<img src="images/ss1.png" width="700">
+</p>
 
 ---
 
 ### Screenshot 2 – Output Displaying Employee Records Using Explicit Cursor
 
-![Explicit Cursor Output](images/ss2.png)
+<p align="center">
+<img src="images/ss2.png" width="700">
+</p>
 
 ---
 
 ### Screenshot 3 – Output Showing Employee Details with Rows Processed Using Cursor Attributes
 
-![Cursor Attribute Output](images/ss3.png)
+<p align="center">
+<img src="images/ss3.png" width="700">
+</p>
 
 ---
 
 # Learning Outcome
 
-- Learned the concept and importance of cursors in **PL/pgSQL**
+- Learned the concept and importance of **cursors in PL/pgSQL**
 - Understood the difference between **implicit and explicit cursors**
 - Learned how to **fetch records one by one from a table**
 - Learned how to use **cursor attributes such as FOUND and NOT FOUND**
